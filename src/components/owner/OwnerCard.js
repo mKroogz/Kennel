@@ -1,13 +1,13 @@
 import React from "react";
 
-const EmployeeCard = () => {
+const EmployeeCard = (props) => {
   return (
     <div className="card">
       <div className="card-content">
         <h3>
-          Name: <span className="card-empname">Dr. Malcolm Woof</span>
+          Name: <span className="card-ownname">{props.owner.name}</span>
         </h3>
-        <p>Owner and Operator for the past 15 years</p>
+        <p>{props.owner.description}</p>
       </div>
     </div>
   );
