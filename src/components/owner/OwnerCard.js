@@ -1,6 +1,6 @@
 import React from "react";
 
-const EmployeeCard = (props) => {
+const OwnerCard = (props) => {
   return (
     <div className="card">
       <div className="card-content">
@@ -8,9 +8,10 @@ const EmployeeCard = (props) => {
           Name: <span className="card-ownname">{props.owner.name}</span>
         </h3>
         <p>{props.owner.description}</p>
+        <button type="button" onClick={() => props.deleteOwner(props.owner.id)}>Remove</button>
       </div>
     </div>
   );
 };
 
-export default EmployeeCard;
+export default OwnerCard;
