@@ -14,6 +14,11 @@
       "id": 3,
       "name": "Esme",
       "breed": "Pitbull"
+    },
+    {
+      "name": "Clifford ",
+      "breed": "Big Red Dog",
+      "id": 4
     }
   ],
   "employees": [
@@ -21,6 +26,11 @@
       "id": 1,
       "name": "Jake from State Farm",
       "position": "Pet Groomer"
+    },
+    {
+      "name": "A Literal Goldfish",
+      "position": "Dog Watcher",
+      "id": 2
     }
   ],
   "locations": [
@@ -40,6 +50,11 @@
       "id": 2,
       "name": "PHD. Barks Mcgee",
       "description": "Part dog, part owner of dogs, fully adorable"
+    },
+    {
+      "name": "Ashley Thompson",
+      "description": "A regular at our establishment",
+      "id": 3
     }
   ]
 }
