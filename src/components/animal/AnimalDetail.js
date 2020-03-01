@@ -24,7 +24,7 @@ const AnimalDetail = props => {
     props.history.push("/animals")
   );
 };
-
+ 
   return (
     <div className="card">
       <div className="card-content">
