@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import OwnerCard from "./OwnerCard";
 import OwnerManager from "../../modules/OwnerManager";
 
-const OwnerList = (props) => {
+const OwnerList = props => {
   // The initial state is an empty array
   const [owners, setOwners] = useState([]);
 
@@ -16,9 +16,7 @@ const OwnerList = (props) => {
   };
 
   const deleteOwner = id => {
-    OwnerManager.delete(id).then(() =>
-      OwnerManager.getAll().then(setOwners)
-    );
+    OwnerManager.delete(id).then(() => OwnerManager.getAll().then(setOwners));
   };
 
   // got the owners from the API on the component's first render
@@ -29,7 +27,7 @@ const OwnerList = (props) => {
   // Finally we use map() to "loop over" the owners array to show a list of animal cards
   return (
     <>
-    <section className="section-content">
+      <section className="section-content">
         <button
           type="button"
           className="btn"
@@ -40,11 +38,11 @@ const OwnerList = (props) => {
           Add new owner
         </button>
       </section>
-    <div className="container-cards">
-      {owners.map(owner => 
-        <OwnerCard key={owner.id} owner={owner} deleteOwner={deleteOwner} />
-      )}
-    </div>
+      <div className="container-cards">
+        {owners.map(owner => (
+          <OwnerCard key={owner.id} owner={owner} deleteOwner={deleteOwner} {...props} />
+        ))}
+      </div>
     </>
   );
 };

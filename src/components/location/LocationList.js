@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import LocationCard from "./LocationCard";
 import LocationManager from "../../modules/LocationManager";
 
-const LocationList = (props) => {
+const LocationList = props => {
   // The initial state is an empty array
   const [locations, setLocations] = useState([]);
 
@@ -29,7 +29,7 @@ const LocationList = (props) => {
   // Finally we use map() to "loop over" the locations array to show a list of animal cards
   return (
     <>
-    <section className="section-content">
+      <section className="section-content">
         <button
           type="button"
           className="btn"
@@ -40,11 +40,16 @@ const LocationList = (props) => {
           Open Location
         </button>
       </section>
-    <div className="container-cards">
-      {locations.map(location => 
-        <LocationCard key={location.id} location={location} deleteLocation={deleteLocation} />
-      )}
-    </div>
+      <div className="container-cards">
+        {locations.map(location => (
+          <LocationCard
+            key={location.id}
+            kennelLocation={location}
+            deleteLocation={deleteLocation}
+            {...props}
+          />
+        ))}
+      </div>
     </>
   );
 };

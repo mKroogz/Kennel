@@ -16,9 +16,9 @@
       "breed": "Pitbull"
     },
     {
+      "id": 4,
       "name": "Clifford ",
-      "breed": "Big Red Dog",
-      "id": 4
+      "breed": "Big Red Doggo"
     }
   ],
   "employees": [
@@ -28,9 +28,9 @@
       "position": "Pet Groomer"
     },
     {
+      "id": 2,
       "name": "A Literal Goldfish",
-      "position": "Dog Watcher",
-      "id": 2
+      "position": "Dog Watcher (from the bowl)"
     }
   ],
   "locations": [
@@ -42,7 +42,7 @@
     {
       "id": 3,
       "area": "Murfreesboro Location",
-      "address": "1216 Bark Rd"
+      "address": "1216 Bark Bark Rd"
     }
   ],
   "owners": [
@@ -52,9 +52,9 @@
       "description": "Part dog, part owner of dogs, fully adorable"
     },
     {
-      "name": "Ashley Thompson",
-      "description": "A regular at our establishment",
-      "id": 3
+      "id": 3,
+      "name": "Ashley Thompson jr.",
+      "description": "Owns quite a few dogs"
     }
   ]
 }
