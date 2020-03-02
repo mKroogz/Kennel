@@ -20,5 +20,14 @@ export default {
     return fetch(`${remoteURL}/employees/${id}`, {
       method: "DELETE"
     }).then(result => result.json())
+  },
+  update(editedEmployees) {
+    return fetch(`${remoteURL}/employees/${editedEmployees.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedEmployees)
+    }).then(data => data.json());
   }
 }
